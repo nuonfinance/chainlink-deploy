@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This tool is helpful to manage a local Chainlink node",
   "scripts": {
-    "start:db": "docker run --name cl-postgres -e POSTGRES_PASSWORD=${POSTGRES_PASSWORD} -p 5432:5432 -d postgres",
+    "start:db": "docker run --name cl-postgres -e POSTGRES_PASSWORD=<db_password> -p 5432:5432 -d postgres",
     "start:chainlink": "docker run --platform linux/x86_64/v8 --name chainlink -v ./chainlink:/chainlink -it -p 6688:6688 --add-host=host.docker.internal:host-gateway smartcontract/chainlink:2.20.0 node -config /chainlink/config.toml -secrets /chainlink/secrets.toml start",
     "restart:chainlink": "docker stop chainlink && docker rm chainlink && npm run start:chainlink"
   },

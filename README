@@ -1,0 +1,16 @@
+## Setting up variables
+Set up variables for all the configuration files:
+
+`chainlink/config.toml`
+- <chain_id>
+- <chain_name>
+- <link_contract_address>
+- <wss_endpoint>
+- <http_endpoint>
+
+`chainlink/secrets.toml`
+- <keystore_password>
+- <db_password>
+
+`package.json`
+- <db_password>

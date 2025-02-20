@@ -10,6 +10,7 @@ HTTPSPort = 0
 
 [[EVM]]
 ChainID = <chain_id>
+LinkContractAddress = <link_contract_address>
 
 [[EVM.Nodes]]
 Name = <chain_name>
