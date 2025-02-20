@@ -12,5 +12,8 @@ Set up variables for all the configuration files:
 - <keystore_password>
 - <db_password>
 
+`.api`
+- <admin_password>
+
 `package.json`
 - <db_password>
