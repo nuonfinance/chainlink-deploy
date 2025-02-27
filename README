@@ -1,19 +1,16 @@
 ## Setting up variables
-Set up variables for all the configuration files:
+Set up `.env` variables and variables in the configuration files:
 
-`chainlink/config.toml`
-- <chain_id>
-- <chain_name>
-- <link_contract_address>
-- <wss_endpoint>
-- <http_endpoint>
+1. `chainlink/config.toml`
+- `<chain_id>`
+- `<chain_name>`
+- `<link_contract_address>`
+- `<wss_endpoint>`
+- `<http_endpoint>`
 
-`chainlink/secrets.toml`
-- <keystore_password>
-- <db_password>
+2. `chainlink/secrets.toml`
+- `<keystore_password>`
+- `<db_password>`
 
-`.api`
-- <admin_password>
-
-`package.json`
-- <db_password>
+3. `.api`
+- `<admin_password>`
